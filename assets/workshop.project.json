@@ -1,0 +1,30 @@
+{
+  "name": "AssetWorkshop",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Kit": {
+        "$path": "../kit/src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "Kit": {
+        "$path": "../kit/src/server"
+      }
+    },
+    "ServerStorage": {
+      "Library": {
+        "$path": "library"
+      },
+      "AssetIndex": {
+        "$path": "index.luau"
+      },
+      "ArtDump": {
+        "$path": "../tools/art/dump.luau"
+      },
+      "ArtFinish": {
+        "$path": "../tools/art/finish.luau"
+      }
+    }
+  }
+}

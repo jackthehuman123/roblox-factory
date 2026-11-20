@@ -1,0 +1,24 @@
+{
+  "name": "{{slug}}",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Kit": { "$path": "../../kit/src/shared" },
+      "Game": { "$path": "src/shared" },
+      "Packages": { "$path": { "optional": "Packages" } }
+    },
+    "ServerStorage": {
+      "Art": { "$path": { "optional": "art" } }
+    },
+    "ServerScriptService": {
+      "Kit": { "$path": "../../kit/src/server" },
+      "Game": { "$path": "src/server" }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Kit": { "$path": "../../kit/src/client" },
+        "Game": { "$path": "src/client" }
+      }
+    }
+  }
+}

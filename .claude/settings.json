@@ -1,0 +1,51 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(Packages/**)",
+      "Grep(Packages/**)",
+      "Glob(Packages/**)",
+      "Read(**/*.rbxl)",
+      "Grep(**/*.rbxl)",
+      "Glob(**/*.rbxl)",
+      "Read(**/*.rbxlx)",
+      "Grep(**/*.rbxlx)",
+      "Glob(**/*.rbxlx)",
+      "Read(**/*.rbxm)",
+      "Grep(**/*.rbxm)",
+      "Glob(**/*.rbxm)",
+      "Read(**/sourcemap.json)",
+      "Grep(**/sourcemap.json)",
+      "Glob(**/sourcemap.json)",
+      "Read(work/**)",
+      "Grep(work/**)",
+      "Glob(work/**)",
+      "Read(docs/research/**)",
+      "Grep(docs/research/**)",
+      "Glob(docs/research/**)",
+      "Read(**/.env)",
+      "Grep(**/.env)"
+    ],
+    "allow": [
+      "Bash(tools/check.sh)",
+      "Bash(tools/new-game.sh *)",
+      "Bash(rojo *)",
+      "Bash(lune *)",
+      "Bash(git status)",
+      "Bash(git diff*)",
+      "Bash(git log*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/tools/hooks/post-edit.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+Packages/
+*.rbxl
+*.rbxlx
+sourcemap.json
+work/
+tools/types/
+.superpowers/
+.factory-busy
+.env
